@@ -1,0 +1,65 @@
+<style type="text/css">
+  p, h1, h2, h3, h4 {
+    font-family: Trebuchet MS, Tahoma, Verdana, sans-serif;
+    line-height: 1.25;
+  }
+  p {
+    text-align: justify;
+  }
+  .cellLeft {
+    padding: 0 25 0 0;
+    border-right:1px solid black;
+  }
+  .cellRight {
+    padding: 0 0 0 25;
+  }
+
+</style>
+
+<table>
+  <tr> 
+    <td colspan="2">
+      <img src="icon_EcoCond.png" width="100"/> 
+      <h1>EcoCondition Toolset</h1>
+    </td>
+  </tr>
+  <tr> 
+    <td style="width:50%; vertical-align: top;" colspan="1" class="cellLeft">
+      <h3>EcoCondition Toolset - A QGIS plugin for ecosystem condition assessment</h3>
+      <p>This plugin contains a set of tools to prepared data for, and assess, the <b>Ecosystem condition</b> of any specific ecosystem type. The ecosystem condition assessment is based on the weighted sum of six specific ecosystem states (Physical, Chemical, Compositional, Structural, Functional, Landscape), following the <a href="https://seea.un.org/ecosystem-accounting" target="_blank">system of environmental accounting</a> developed by the United Nations. 
+      <p>This plugin allows for the assessment of the <b>Ecosystem condition</b> for a user ecosystem of choice, based on the weighted sum of variables related to 6 specific ecosystem states (Physical, Chemical, Compositional, Structural, Functional, and Landscape states).</p>
+      
+      <h3>Background</h3>
+      <p>Ecosystem condition quantifies an ecosystem’s integrity, function and resilience. Under SEEA EA, it is operationalized by: (1) mapping consistent ecosystem units; (2) selecting structural, functional and compositional indicators; (3) defining reference bounds; and (4) aggregating indicators into a composite index. Comparing current and reference states reveals habitat trends, guides restoration and informs policy. Platforms like ARIES for SEEA automate forest condition accounts by integrating geospatial layers and applying SEEA EA protocols.</p>
+      <p>Indicator weights reflect intrinsic and service relevance, directional meaning, human sensitivity and data reliability. Methods range from simple sums and averages—which can mask interactions—to PCA or machine learning, which need training data and can reduce transparency, and fuzzy logic, which needs rule calibration. Weighted sums normalize each indicator, apply explicit weights and combine them, offering traceability, flexibility and GIS compatibility. To ensure robustness, normalization, collinearity checks and stakeholder input are essential.</p>
+    </td>
+
+    <td style="width:50%; vertical-align: top;" colspan="1" class="cellRight">
+      <h3>The toolset</h3>
+      <p>The toolset comprises the following tools:</p>
+      <p><img src="icon_AlignRasters_mini.png" height="16" align="center"/> 1. <b>Align layers</b> (with clip and resample options),
+      <br><img src="icon_noDataCorr_mini.png" height="16" align="center"/> 2. <b>Solve no-data issues</b> (diff. sources & data formats),
+      <br><img src="icon_Multicollinearity_mini.png" height="16" align="center"/> 3. <b>Test data for multicollinearity</b>,
+      <br><img src="icon_Normalization_mini.png" height="16" align="center"/> 4. <b>Normalise and invert data</b> (with no-data options),and
+      <br><img src="icon_EcoCond_mini.png" height="16" align="center"/> 5. <b>Calculate Ecosystem Condition</b>.
+      </p>
+      <h4>Tool 1. Align layers</h4>
+      <p>This tool allows the user to collect data from different sources, with different Coordinate Reference System (CRS), resolution and data types, and apply a set of operations on these layers (clip and resample), outputting a new set of layers, all with the same CRS, data type, number of columns and lines, and resolution. </p>
+      <h4>Tool 2. Solve no-data issues</h4>
+      <p>This tool allows the user to harmonise and to solve no-data values for different raster layers. It is beneficial to prepare raster layers from various sources and data types for subsequent calculations. It addresses potential issues with rasters in different formats, such as ‘Float32’, ‘Byte’, ‘UInt16’. The user can define a specific no-data value (default fvalue is -9999). </p>
+      <h4>Tool 3. Test data for multicollinearity</h4>
+      <p>This tool helps to detect and quantify multicollinearity between multiple raster layers. Multicollinearity refers to situations where one variable can be linearly predicted from others with a high degree of accuracy. The tool provides two complementary assessments: via a Spearman correlation; and via the Variance Inflation Factor (VIF). </p>
+      <h4>Tool 4. Normalise and invert data </h4>
+      <p>This tool allows the user to normalise the selected variables (typically to a 0–1 scale), and invert them when needed, ensuring comparability within each ecosystem state. </p>
+      <h4>Tool 5. Calculate Ecosystem Condition</h4>
+      <p>The ecosystem condition assessment tool enables the user to select the final layers for each ecosystem state, checks for layer alignment, and allows the user to assign weights to each ecosystem state and its related layers. The first values shown are default values, assuming that each state and its corresponding variable have the same weight. </p>
+      
+      <p>The tool was developed by the <b>MRU Environmental Management Research Lab</b> at Mykolas Romeris University, Vilnius, Lithuania, under the SELINA project, financed by the EU Horizon 2020 Research and Innovation Actions, Grant agreement No. <i>101060415</i>.</p>
+      <p>
+      <img src="logo_MRU_ES_lab.png" height="150"/><br> 
+      <img src="logo_SELINA.png" height="70"/> 
+      <img src="logo_CE_EN_RGB_HORIZONTAL_POS.png" height="70"/>
+      </p>
+    </td>
+  </tr>
+</table>

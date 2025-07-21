@@ -1,0 +1,35 @@
+[general]
+name=EcoCondition Toolset
+qgisMinimumVersion=3.22
+version=0.9.86
+author=Luís Valença Pinto, MRU.EM.res.lab.
+email=lmpinto@mac.com
+description=A QGIS plugin for ecosystem condition assessment
+about=This plugin contains a set of tools to prepared data for, and assess, the Ecosystem condition of any specific ecosystem type. The ecosystem condition assessment is based on the weighted sum of 6 specific ecosystem states (Physical, Chemical, Compositional, Structural, Functional, Landscape), following the system of environmental accounting developed by the United Nations (https://seea.un.org/ecosystem-accounting). Each state is calculated according to data selected by the user. 
+
+    </br>The different tools allow the user to follow clear steps regarding the correct preparation of the data needed for the assessment. Users are able to: 
+    </br><img src="resources/icon_AlignRasters_mini.png" height="16"/>1. Align layers (with clip and resample options), 
+    <img src="resources/icon_noDataCorr_mini.png" height="16"/>2. Solve no-data issues (due to different sources and data formats), 
+    <img src="resources/icon_Multicollinearity_mini.png" height="16"/>3. Test data for multicollinearity, 
+    <img src="resources/icon_Normalization_mini.png" height="16"/>4. Normalise and invert data (with no-data options),and 
+    <img src="resources/icon_EcoCond_mini.png" height="16"/>5. Calculate Ecosystem Condition.
+    </br>Once all the data is prepared and verified, the <b>Ecosystem Condition assessment</b> tool allows the user to identify the final layers corresponding to each ecosystem state, doing a final alignment verification. Before proceeding with the calculations, the tool will show default weights attributed to each ecosystem state and each ecosystem state variable. 
+    </br>By default, all weights are equally distributed per ecosystem state and layer groups. These weights can be adjusted by the users, allowing them to incorporate specific weights, e.g., derived from stakeholder preferences. 
+class_name=EcoCondToolset
+
+experimental=True
+deprecated=False
+icon=resources/icon_EcoCond.png
+
+; end of mandatory metadata
+
+; start of optional metadata
+category=Raster
+; The changelog lists the plugin versions and their changes:
+ changelog=
+     0.9.86 - First version released on GitHub (beta). 
+
+; Tags are in comma separated value format, spaces are allowed within the tag name.
+; Tags should be in English language. Please also check for existing tags and
+; synonyms before creating a new one.
+tags=raster,Ecosystem Condition, data alignment, data normalization, weighted sums, data alignment, multicollinearity assessment. 

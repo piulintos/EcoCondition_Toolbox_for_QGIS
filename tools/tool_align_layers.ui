@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>AlignerDialog</class>
+  <widget class="QDialog" name="AlignerDialog">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1424</width>
+        <height>650</height>
+      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="windowTitle">
+      <string>Align Raster Layers</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_main">
+      
+      <!-- Reference GroupBox -->
+      <item>
+        <widget class="QGroupBox" name="groupBox_reference">
+          <property name="title">
+            <string>Reference Layer Settings</string>
+          </property>
+          <layout class="QFormLayout" name="formLayout_reference">
+            <!-- Output Folder -->
+            <item row="0" column="0">
+              <widget class="QLabel" name="label_output_folder">
+                <property name="text">
+                  <string>Output folder:</string>
+                </property>
+              </widget>
+            </item>
+            <item row="0" column="1">
+              <widget class="QWidget" name="widget_output_folder">
+                <layout class="QHBoxLayout" name="horizontalLayout_output">
+                  <item>
+                    <widget class="QLineEdit" name="lineEdit_output_folder">
+                      <property name="readOnly">
+                        <bool>false</bool>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QToolButton" name="toolButton_browse_output">
+                      <property name="text">
+                        <string>Browse...</string>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+            <!-- Reference Layer Selection -->
+            <item row="1" column="0">
+              <widget class="QLabel" name="label_reference_layer">
+                <property name="text">
+                  <string>Reference layer:</string>
+                </property>
+              </widget>
+            </item>
+            <item row="1" column="1">
+              <widget class="QComboBox" name="comboBox_reference_layer">
+                <property name="editable">
+                  <bool>false</bool>
+                </property>
+              </widget>
+            </item>
+            <!-- Reference Characteristics (read-only) -->
+            <item row="2" column="0">
+              <widget class="QLabel" name="label_ref_info">
+                <property name="text">
+                  <string>Reference layer characteristics:</string>
+                </property>
+              </widget>
+            </item>
+            <item row="2" column="1">
+              <widget class="QPlainTextEdit" name="plainTextEdit_ref_info">
+                <property name="readOnly">
+                  <bool>true</bool>
+                </property>
+                <property name="maximumHeight">
+                  <number>20</number>
+                </property>
+              </widget>
+            </item>
+          </layout>
+        </widget>
+      </item>
+
+      <!-- Spacer -->
+      <item>
+        <spacer name="spacer_top">
+          <property name="orientation">
+            <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>20</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+      </item>
+
+      <!-- Layer Selection GroupBox -->
+      <item>
+        <widget class="QGroupBox" name="groupBox_layers">
+          <property name="title">
+            <string>Layer Selection</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_layers">
+            <!-- Available Layers -->
+            <item>
+              <widget class="QGroupBox" name="groupBox_available">
+                <property name="title">
+                  <string>Available layers:</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_available">
+                  <item>
+                    <widget class="QListWidget" name="listWidget_available">
+                      <property name="selectionMode">
+                        <enum>QAbstractItemView::ExtendedSelection</enum>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_buttons">
+                      <item>
+                        <widget class="QPushButton" name="pushButton_add">
+                          <property name="text">
+                            <string>Add</string>
+                          </property>
+                        </widget>
+                      </item>
+                      <item>
+                        <widget class="QPushButton" name="pushButton_remove">
+                          <property name="text">
+                            <string>Remove</string>
+                          </property>
+                        </widget>
+                      </item>
+                    </layout>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+
+            <!-- Selected Layers Table -->
+            <item>
+              <widget class="QGroupBox" name="groupBox_selected">
+                <property name="title">
+                  <string>Selected layers:</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_selected">
+                  <item>
+                    <widget class="QTableWidget" name="tableWidget_selected">
+                      <property name="columnCount">
+                        <number>7</number>
+                      </property>
+                      <property name="horizontalHeaderLabels">
+                        <stringlist>
+                          <string>Original Name</string>
+                          <string>Cell size</string>
+                          <string>Data Type</string>
+                          <string>CRS</string>
+                          <string>New Layer Name</string>
+                          <string>Interp. Method</string>
+                          <string>Output Type</string>
+                        </stringlist>
+                      </property>
+                      <property name="selectionBehavior">
+                        <enum>QAbstractItemView::SelectRows</enum>
+                      </property>
+                      <property name="editTriggers">
+                        <set>QAbstractItemView::DoubleClicked|QAbstractItemView::SelectedClicked</set>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </widget>
+            </item>
+          </layout>
+        </widget>
+      </item>
+
+      <!-- Spacer -->
+      <item>
+        <spacer name="spacer_middle">
+          <property name="orientation">
+            <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>20</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+      </item>
+
+      <!-- Add‐to‐Project Checkbox -->
+      <item>
+        <widget class="QCheckBox" name="checkBox_addToProject">
+          <property name="text">
+            <string>Add output layers to project (into ‘01. Aligned layers’ group)</string>
+          </property>
+          <property name="checked">
+            <bool>true</bool>
+          </property>
+        </widget>
+      </item>
+
+      <!-- Run Button (full‐width) -->
+      <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_run">
+          <item>
+            <widget class="QPushButton" name="pushButton_run">
+              <property name="text">
+                <string>Run</string>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumHeight">
+                <number>35</number>
+              </property>
+            </widget>
+          </item>
+        </layout>
+      </item>
+
+      <!-- Cancel Button (full‐width) -->
+      <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_cancel">
+          <item>
+            <widget class="QPushButton" name="pushButton_cancel">
+              <property name="text">
+                <string>Cancel</string>
+              </property>
+              <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumHeight">
+                <number>35</number>
+              </property>
+            </widget>
+          </item>
+        </layout>
+      </item>
+
+      <!-- Spacer at Bottom -->
+      <item>
+        <spacer name="spacer_bottom">
+          <property name="orientation">
+            <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint">
+            <size>
+              <width>20</width>
+              <height>20</height>
+            </size>
+          </property>
+        </spacer>
+      </item>
+      
+    </layout>
+  </widget>
+  <resources/>
+  <connections/>
+</ui>
