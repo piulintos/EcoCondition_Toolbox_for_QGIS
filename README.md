@@ -25,9 +25,8 @@ Please cite SELINA and MAFESUR appropriately when using this tool in published w
 
 ## 🚀 Installation
 1. Clone or download the plugin repository: git clone https://github.com/piulintos/EcoCondition_Toolbox_for_QGIS
-2. 
-3. Place it in your QGIS plugin directory
-4. Activate it from the QGIS Plugin Manager
+2. Place it in your QGIS plugin directory
+3. Activate it from the QGIS Plugin Manager
 Tested on QGIS 3.34 and above, Mac and PC environments.
 
 🖼️ Screenshots (coming soon)
