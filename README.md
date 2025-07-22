@@ -1,3 +1,4 @@
+<img src="images/icon_EcoCond.png" alt="Plugin icon" width="64" />
 # EcoCondition Toolbox - A QGIS plugin for ecosystem condition assessment
 QGIS plugin with a set of tools to prepare data for, and assess, the Ecosystem condition of any specific ecosystem type. Based on the weighted sum of 6 specific ecosystem states (Physical, Chemical, Compositional, Structural, Functional, Landscape), following the system of environmental accounting developed by the United Nations.
 EcoCondition Toolset Plugin for QGIS
@@ -45,22 +46,28 @@ Tested on QGIS 3.34 and above, in both Mac and Windows environment. Intended to 
 - Processing plugin (must be enabled)
 
 ## 🖼️ Screenshots 
-![The EcoConditon toolset menu](images/ECtool_0_menu.png)
-
+The EcoConditon toolset menu
 [![The EcoConditon toolset menu](images/ECtool_0_menu.png)](images/ECtool_0_menu.png)
 
+The Align tool dialog
 [![The Align tool dialog](images/ECtool_1_align.png)](images/ECtool_1_align.png)
 
+The no-data tool dialog
 [![The no-data tool dialog](images/ECtool_2_no_data.png)](images/ECtool_2_no_data.png)
 
+The multicollinearity assessment tool dialog
 [![The multicollinearity assessment tool dialog](images/ECtool_3_multicoll.png)](images/ECtool_3_multicoll.png)
 
+The normalisation tool dialog (selecting variables)
 [![The normalisation tool dialog (selecting variables)](images/ECtool_4_normalise.png)](images/ECtool_4_normalise.png)
 
+The ecosystem condition assessment tool dialog (selecting variables)
 [![The ecosystem condition assessment tool dialog (selecting variables)](images/ECtool_5a_vars.png)](images/ECtool_5a_vars.png)
 
+The ecosystem condition assessment tool dialog (setting weights)
 [![The ecosystem condition assessment tool dialog (setting weights)](images/ECtool_5b_weights.png)](images/ECtool_5b_weights.png)
 
+The ecosystem condition assessment tool dialog (results)
 [![The ecosystem condition assessment tool dialog (results)](images/ECtool_5c_results.png)](images/ECtool_5c_results.png)
 =======
 🖼️ Screenshots (coming soon)
