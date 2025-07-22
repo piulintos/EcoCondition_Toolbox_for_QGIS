@@ -1,7 +1,7 @@
 [general]
 name=EcoCondition Toolset
 qgisMinimumVersion=3.22
-version=0.9.86
+version=0.9.87
 author=Luís Valença Pinto, MRU.EM.res.lab.
 email=lmpinto@mac.com
 description=A QGIS plugin for ecosystem condition assessment
@@ -27,9 +27,17 @@ icon=resources/icon_EcoCond.png
 category=Raster
 ; The changelog lists the plugin versions and their changes:
  changelog=
+     0.9.87 - Added dependencies information to the metadata. 
      0.9.86 - First version released on GitHub (beta). 
 
 ; Tags are in comma separated value format, spaces are allowed within the tag name.
 ; Tags should be in English language. Please also check for existing tags and
 ; synonyms before creating a new one.
 tags=raster,Ecosystem Condition, data alignment, data normalization, weighted sums, data alignment, multicollinearity assessment. 
+
+[dependencies]
+gdal = ">=3.0"          ; install via conda: `conda install -c conda-forge gdal` or pip: `pip install gdal`
+numpy = ">=1.18"        ; install via pip: `pip install numpy`
+scipy = ">=1.4"         ; install via pip: `pip install scipy`
+pandas = ">=1.0"        ; install via pip: `pip install pandas`
+statsmodels = ">=0.12"  ; optional, for VIF; install via pip: `pip install statsmodels`
