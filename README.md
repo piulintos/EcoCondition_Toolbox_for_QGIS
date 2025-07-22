@@ -29,7 +29,42 @@ Please cite SELINA and MAFESUR appropriately when using this tool in published w
 3. Activate it from the QGIS Plugin Manager
 Tested on QGIS 3.34 and above, Mac and PC environments.
 
+<<<<<<< HEAD
+Tested on QGIS 3.34 and above, in both Mac and Windows environment. Intended to work also in Linux.
+
+## Dependencies
+**External Python dependencies (install via pip/conda):**
+
+- GDAL Python bindings (osgeo.gdal) (≥3.0) (install via conda: `conda install -c conda-forge gdal`, or pip: `pip install gdal`)
+- numpy (≥1.18) (install via pip: `pip install numpy`)
+- scipy (≥1.4) (install via: `pip install scipy`)
+- pandas (≥1.0) (install via pip: `pip install pandas`)
+- statsmodels (≥0.12) (optional; for VIF in Multicollinearity)
+
+**QGIS requirements:**
+- Processing plugin (must be enabled)
+
+## 🖼️ Screenshots 
+![The EcoConditon toolset menu](images/ECtool_0_menu.png)
+
+[![The EcoConditon toolset menu](images/ECtool_0_menu.png)](images/ECtool_0_menu.png)
+
+[![The Align tool dialog](images/ECtool_1_align.png)](images/ECtool_1_align.png)
+
+[![The no-data tool dialog](images/ECtool_2_no_data.png)](images/ECtool_2_no_data.png)
+
+[![The multicollinearity assessment tool dialog](images/ECtool_3_multicoll.png)](images/ECtool_3_multicoll.png)
+
+[![The normalisation tool dialog (selecting variables)](images/ECtool_4_normalise.png)](images/ECtool_4_normalise.png)
+
+[![The ecosystem condition assessment tool dialog (selecting variables)](images/ECtool_5a_vars.png)](images/ECtool_5a_vars.png)
+
+[![The ecosystem condition assessment tool dialog (setting weights)](images/ECtool_5b_weights.png)](images/ECtool_5b_weights.png)
+
+[![The ecosystem condition assessment tool dialog (results)](images/ECtool_5c_results.png)](images/ECtool_5c_results.png)
+=======
 🖼️ Screenshots (coming soon)
+>>>>>>> parent of 0e43876 (adding screenshots)
 
 ## 📜 License
 GPL v3 
