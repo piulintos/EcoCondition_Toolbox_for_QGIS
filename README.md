@@ -1,4 +1,5 @@
 <img src="images/icon_EcoCond.png" alt="Plugin icon" width="64" />
+
 # EcoCondition Toolbox - A QGIS plugin for ecosystem condition assessment
 QGIS plugin with a set of tools to prepare data for, and assess, the Ecosystem condition of any specific ecosystem type. Based on the weighted sum of 6 specific ecosystem states (Physical, Chemical, Compositional, Structural, Functional, Landscape), following the system of environmental accounting developed by the United Nations.
 EcoCondition Toolset Plugin for QGIS
