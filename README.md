@@ -1,8 +1,6 @@
 <img src="images/icon_EcoCond.png" alt="Plugin icon" width="64" />
 # EcoCondition Toolbox - A QGIS plugin for ecosystem condition assessment
-QGIS plugin with a set of tools to prepare data for, and assess, the Ecosystem condition of any specific ecosystem type. Based on the weighted sum of 6 specific ecosystem states (Physical, Chemical, Compositional, Structural, Functional, Landscape), following the system of environmental accounting developed by the United Nations.
-EcoCondition Toolset Plugin for QGIS
- Developed as part of the [SELINA project](https://project-selina.eu/), at the [Environmental Management Research Laboratory](https://www.mruni.eu/en/research/mru-laboratories/environmental-management-laboratory/) ([Mykolas Romeris University](https://mruni.eu))
+QGIS plugin with a set of tools to prepare data for, and assess, the Ecosystem condition of any specific ecosystem type. The plugin is raster-based. The ecosystem condition assessment is based on the weighted sum of 6 specific ecosystem states (Physical, Chemical, Compositional, Structural, Functional, Landscape), following the system of environmental accounting developed by the United Nations. This plugin was developed as part of the [SELINA project](https://project-selina.eu/), at the [Environmental Management Research Laboratory](https://www.mruni.eu/en/research/mru-laboratories/environmental-management-laboratory/) ([Mykolas Romeris University](https://mruni.eu))
 
 **Status:** 🚧 beta version
 
@@ -25,15 +23,13 @@ It integrates key GIS functions required for this kind of assessment, including:
 This plugin was developed under the scope of the SELINA (Science for Evidence-based and sustainabLe decisIons about NAtural capital) project, with partial support from MAFESUR. It was implemented by Luís Pinto within the Environmental Management Research Laboratory, Mykolas Romeris University.
 
 ⚠️ Although the plugin is licensed openly and the code/UI were fully designed and implemented by the developer, the core indicator aggregation logic (weighted sum) follows specifications from the SELINA team.
-Please cite SELINA and MAFESUR appropriately when using this tool in published work.
+Please be sure to cite SELINA and MAFESUR appropriately when using this tool in published work.
 
 ## Installation
 1. Clone or download the plugin repository: git clone [https://github.com/piulintos/EcoCondition_Toolbox_for_QGIS](https://github.com/piulintos/EcoCondition_Toolbox_for_QGIS)
 2. Place it in your QGIS plugin directory
 3. Activate it from the QGIS Plugin Manager
-Tested on QGIS 3.34 and above, Mac and PC environments.
-
-Tested on QGIS 3.34 and above, in both Mac and Windows environment. Intended to work also in Linux.
+Minimum QGIS version: 3.22 (tested on QGIS 3.34 and above, Mac and PC environments, intended to work also in Linux).
 
 ## Dependencies
 **External Python dependencies (install via pip/conda):**
