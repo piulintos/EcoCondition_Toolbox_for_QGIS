@@ -26,11 +26,12 @@ This plugin was developed under the scope of the SELINA (Science for Evidence-ba
 Please be sure to cite SELINA and MAFESUR appropriately when using this tool in published work.
 
 ## Installation
-1. Clone or download the plugin repository: git clone [https://github.com/piulintos/EcoCondition_Toolbox_for_QGIS](https://github.com/piulintos/EcoCondition_Toolbox_for_QGIS)
-2. Place it in your QGIS plugin directory
-3. Activate it from the QGIS Plugin Manager
+1. Download the plugin via the GitHub repository ([https://github.com/piulintos/EcoCondition_Toolbox_for_QGIS](https://github.com/piulintos/EcoCondition_Toolbox_for_QGIS)
+2. To install via ZIP file, use the 'Download ZIP' option available via the green '<> code' button
+3. In QGIS, go to 'Plugins/Manage and install plugins' and select 'Install from ZIP' on the left
+4. Select the downloaded ZIP file, and install
 
-Minimum QGIS version: 3.22 (tested on QGIS 3.34 and above, Mac and PC environments, intended to work also in Linux).
+Minimum QGIS version: 3.22 (tested on QGIS 3.34 and above, in both Mac and PC environments; intended to work also in Linux).
 
 ## Dependencies
 **External Python dependencies (install via pip/conda):**
